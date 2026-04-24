@@ -1,0 +1,62 @@
+/* assets/styles/index.css */
+@import "tailwindcss";
+
+/* Custom font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap');
+
+/* NU Color Theme */
+:root {
+  --nu-blue: #003C71;
+  --nu-gold: #F5A623;
+  --nu-light-blue: #E8F0F8;
+  --nu-dark-blue: #002B52;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, var(--nu-light-blue) 0%, #ffffff 100%);
+    min-height: 100vh;
+  }
+}
+
+/* Custom utility classes for NU theme */
+@layer components {
+  .bg-nu-blue {
+    background-color: var(--nu-blue);
+  }
+  .bg-nu-gold {
+    background-color: var(--nu-gold);
+  }
+  .text-nu-blue {
+    color: var(--nu-blue);
+  }
+  .text-nu-gold {
+    color: var(--nu-gold);
+  }
+  .border-nu-blue {
+    border-color: var(--nu-blue);
+  }
+  .border-nu-gold {
+    border-color: var(--nu-gold);
+  }
+  .hover-bg-nu-blue:hover {
+    background-color: var(--nu-blue);
+  }
+  .hover-bg-nu-gold:hover {
+    background-color: var(--nu-gold);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scroll padding for fixed header */
+* {
+  scroll-margin-top: 80px;
+}
