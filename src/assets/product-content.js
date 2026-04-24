@@ -1,6 +1,5 @@
 // src/assets/product-content.js
 const products = [
-  // ========== DAILY ESSENTIALS ==========
   {
     id: 1,
     name: "nu-bulldogs-hoodie",
@@ -47,7 +46,6 @@ const products = [
   },
  
 
-  // ========== BULLDOG ACCESSORIES ==========
   {
     id: 7,
     name: "nu-bulldog-keychain",

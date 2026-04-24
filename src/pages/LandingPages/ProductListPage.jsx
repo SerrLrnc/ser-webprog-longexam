@@ -92,8 +92,8 @@ const ProductListPage = () => {
         {activeCategory === 'all' ? (
           <div>
             <CategorySection 
-              title="Daily Essentials"
-              description="Everyday items you need for your campus life - bags, tumblers, lanyards, and more."
+              title=""
+              description=""
               imageSrc="/images/sections/daily-essentials.jpg"
               products={dailyEssentials}
               icon="🎒"
@@ -102,8 +102,8 @@ const ProductListPage = () => {
             <div className="my-8 h-px bg-gradient-to-r from-transparent via-nu-gold to-transparent" />
             
             <CategorySection 
-              title="Bulldog Accessories"  // ← Changed
-              description="Show your Bulldog pride with our collection of accessories - notebooks, tech gear, and more."
+              title=""  // ← Changed
+              description=""
               imageSrc="/images/sections/bulldog-accessories.jpg"  // ← Change image name if needed
               products={bulldogAccessories}
               icon="🐶"  // ← Changed from 📚 to 🐶
@@ -112,8 +112,8 @@ const ProductListPage = () => {
             <div className="my-8 h-px bg-gradient-to-r from-transparent via-nu-gold to-transparent" />
             
             <CategorySection 
-              title="Campus Apparel"
-              description="Show your NU pride with our collection of comfortable and stylish apparel."
+              title=""
+              description=""
               imageSrc="/images/sections/campus-apparel.jpg"
               products={campusApparel}
               icon="👕"

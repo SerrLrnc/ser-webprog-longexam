@@ -8,29 +8,14 @@ const CategorySection = ({ title, description, imageSrc, products, icon }) => {
 
   return (
     <div className="mb-12 scroll-mt-24" id={title.toLowerCase().replace(/\s+/g, '-')}>
-      {/* Category Header */}
-      <div className="relative rounded-3xl overflow-hidden mb-6 group">
-        <img 
-          src={imageSrc}
-          alt={title}
-          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = `https://placehold.co/1200x300/003C71/white?text=${title}`;
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-nu-blue/80 to-transparent flex items-center">
-          <div className="px-6 md:px-10">
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-3xl">{icon}</span>
-              <p className="text-nu-gold text-[11px] font-semibold uppercase tracking-[0.28em]">
-                Category
-              </p>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{title}</h2>
-            <p className="text-white/90 text-sm md:text-base max-w-2xl">{description}</p>
-          </div>
+      {/* Simple text header instead of image */}
+      <div className="mb-6">
+        <div className="flex items-center gap-3 mb-2">
+          <span className="text-3xl">{icon}</span>
+          <h2 className="text-2xl font-bold text-nu-blue">{title}</h2>
         </div>
+        <p className="text-gray-600 text-sm">{description}</p>
+        <div className="mt-3 h-px w-12 bg-nu-gold"></div>
       </div>
 
       {/* Products Grid */}
